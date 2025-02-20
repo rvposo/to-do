@@ -8,7 +8,8 @@ const App = () => {
 
   return (
     <>
-      <AddTask />
+  <div className="h-screen w-screen bg-slate-500 flex justify-center">
+  <AddTask />
       <Tasks /> {/* tasks component called */}
       <button
         onClick={() => {
@@ -18,8 +19,9 @@ const App = () => {
       >
         {message}
       </button>
-      <h1>{text}</h1>
+      <h1 className="text-red-500" >{text}</h1>
       <h2>name2</h2>
+  </div>
     </>
   );
 };
